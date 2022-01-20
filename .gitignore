@@ -1,0 +1,8 @@
+shop.zip
+runtime/
+upload/
+install/
+.env
+.htaccess
+.user.ini
+
