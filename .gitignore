@@ -5,5 +5,8 @@ install/
 .env
 .htaccess
 .user.ini
-aaa
 bbb
+.buildpath
+.project
+desktop.ini
+
