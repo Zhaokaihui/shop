@@ -507,9 +507,9 @@ class Goods extends Base{
                 $data['goodsStatus'] = 0;
             }
 		}
-		if((int)$data['goodsType']==0 &&  (int)$data['isFreeShipping']==0 && (int)$data['shopExpressId']==0){
-        	return WSTReturn("请选择快递公司");
-        }
+// 		if((int)$data['goodsType']==0 &&  (int)$data['isFreeShipping']==0 && (int)$data['shopExpressId']==0){
+//         	return WSTReturn("请选择快递公司");
+//         }
 		if(isset($data['goodsDesc'])){
             if(!WSTCheckFilterWords($data['goodsDesc'],WSTConf("CONF.limitWords"))){
                 return WSTReturn("商品描述包含非法字符");
@@ -722,9 +722,9 @@ class Goods extends Base{
                 $data['goodsStatus'] = 0;
             }
 		}
-		if((int)$ogoods['goodsType']==0 && (int)$data['isFreeShipping']==0 && (int)$data['shopExpressId']==0){
-        	return WSTReturn("请选择快递公司");
-        }
+// 		if((int)$ogoods['goodsType']==0 && (int)$data['isFreeShipping']==0 && (int)$data['shopExpressId']==0){
+//         	return WSTReturn("请选择快递公司");
+//         }
 		if(isset($data['goodsDesc'])){
 			if(!WSTCheckFilterWords($data['goodsDesc'],WSTConf("CONF.limitWords"))){
 				return WSTReturn("商品描述包含非法字符");

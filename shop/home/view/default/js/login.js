@@ -180,7 +180,7 @@ function initRegist(){
 	$('#reg_form').validator({
 	    rules: {
 	    	loginName: function(element) {
-	    		if(this.test(element, "mobile")===true){
+	    		if(this.test(element, "")===true){
 	    			$("#mobileCodeDiv").show();
 	    			$("#refreshCode").hide();
 	    			$("#authCodeDiv").hide();
