@@ -346,7 +346,6 @@ function WSTAutoRegister($loginSrc = 0){
             $wxUnionId = isset($userinfo['unionid'])?$userinfo['unionid']:'';
 		}
     }
-    
     if(empty($user)) {
         $sendMsg = true;
         $loginName = WSTAutoRegisterName();
